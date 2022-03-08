@@ -19,4 +19,6 @@ jobs:
       run: npm install
     - name: Run All the Cucumber Tests - skip wip
       run: |
+        CHROMIUM_BIN=$(which chrome) \
+        percy_TOKEN=${{ secrets.PERCY_TOKEN }} \
         CI=true npx percy exec -- bundle exec cucumber --tags 'not @wip'
