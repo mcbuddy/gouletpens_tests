@@ -1,0 +1,11 @@
+
+---
+default: &default
+  BASE_URI=https://www.gouletpens.com
+  EMAIL=budi.acc.test@gmail.com
+  PASSWORD=Test1234
+  SET=production
+  --format pretty
+  --tags 'not @pending'
+  --tags 'not @wip'
+  features

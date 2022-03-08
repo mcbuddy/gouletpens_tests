@@ -1,0 +1,26 @@
+{
+  "name": "gouletpens_tests",
+  "version": "1.0.0",
+  "description": "Node Package and Library for Goulets Pens Test",
+  "main": " ",
+  "dependencies": {},
+  "devDependencies": {
+    "@percy/cli": "^1.0.0-beta.76"
+  },
+  "scripts": {
+    "test": "bundle exec cucumber --tags 'not @wip'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mcbuddy/gouletpens_tests.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Budi Sugianto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcbuddy/gouletpens_tests/issues"
+  },
+  "homepage": "https://github.com/mcbuddy/gouletpens_tests#readme"
+}

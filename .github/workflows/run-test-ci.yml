@@ -1,0 +1,23 @@
+name: Run Test Suite on CI
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.1.
+    - name: Chrome Install
+      uses: browser-actions/setup-chrome@latest
+      run: chrome --version
+    - name: Bundle Install
+      run: |
+        gem install bundler
+        bundle install
+    - name: NPM Install
+      run: npm install
+    - name: Run All the Cucumber Tests - skip wip
+      run: |
+        CI=true percy exec -- bundle exec cucumber --tags 'not @wip'
