@@ -11,7 +11,6 @@ jobs:
         ruby-version: 3.1.
     - name: Chrome Install
       uses: browser-actions/setup-chrome@latest
-      run: chrome --version
     - name: Bundle Install
       run: |
         gem install bundler
