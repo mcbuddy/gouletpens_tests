@@ -11,7 +11,7 @@ class ShoppingCartPage < BasePage
     expect(has_shopping_cart_title?).to be true
     expect(page).to have_text('Order Summary')
     expect(page).to have_button('Check Out')
-    sleep(2)
+    sleep(3)
     click_on 'Remove'
   end
 
