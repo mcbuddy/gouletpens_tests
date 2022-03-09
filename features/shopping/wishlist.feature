@@ -3,7 +3,7 @@ Feature: Add Product to Wishlist
   User should be able to add product to wishlist
 
   @percy
-  Scenario: Success Add q products to Wishlist
+  Scenario: Success Add a products to Wishlist
     Given user on the product page
     When user add a product to wishlist
     And user confirm to add product to wishlist
