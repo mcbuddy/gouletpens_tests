@@ -25,6 +25,7 @@ jobs:
       run: |
         CHROMIUM_BIN=$(which chrome) \
         PERCY_TOKEN=${{ secrets.PERCY_TOKEN }} \
+        CUCUMBER_PUBLISH_TOKEN=${{ secrets.CUCUMBER_PUBLISH_TOKEN }} \
         PERCY_BROWSER_EXECUTABLE==$(which chrome) \
         PUPPETEER_EXECUTABLE_PATH=$(which chrome) \
         PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
