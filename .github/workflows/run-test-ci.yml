@@ -27,6 +27,9 @@ jobs:
       run: |
         CHROMIUM_BIN=$(which chrome) \
         PERCY_TOKEN=${{ secrets.PERCY_TOKEN }} \
-        HEADLESS=true \
+        PERCY_BROWSER_EXECUTABLE==$(which chrome) \
+        PUPPETEER_EXECUTABLE_PATH=$(which chrome) \
+        PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
+        CHROME_HEADLESS=true \
         CI=true \
         npx percy exec -- bundle exec cucumber --tags 'not @wip'
