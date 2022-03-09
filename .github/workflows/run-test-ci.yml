@@ -1,4 +1,4 @@
-name: Run Test Suite on CI
+name: Cucumber Test
 on: [push, pull_request]
 jobs:
   build:

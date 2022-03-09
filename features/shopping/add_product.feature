@@ -26,7 +26,7 @@ Feature: Add Product to Cart
   @lighthouse
   Scenario: Performance Test - Product Page
     Then this page should pass minimum performance thresholds:
-      | performance    | 50 |
+      | performance    | 40 |
       | accessibility  | 70 |
       | best_practices | 70 |
       | seo            | 80 |
