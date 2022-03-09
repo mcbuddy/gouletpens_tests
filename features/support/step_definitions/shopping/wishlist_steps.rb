@@ -15,6 +15,7 @@ end
 Given('user have a product on wishlist') do
   product_page.visit_product_page
   product_page.add_product_to_wishlist
+  product_page.add_to_list
   wishlist_page.visit_wishlist_page
 end
 
