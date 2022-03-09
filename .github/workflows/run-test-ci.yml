@@ -15,14 +15,10 @@ jobs:
       with:
         chrome-version: stable
 
-    - name: Bundle Install
+    - name: Bundle Install and NPM Install
       run: |
         gem install bundler
         bundle install
-
-    - name: NPM Install
-      run: |
-        npm install -g lighthouse  @percy/cli
         npm install
 
     - name: Run All the Cucumber Tests - skip wip
@@ -34,4 +30,4 @@ jobs:
         PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
         CHROME_HEADLESS=true \
         CI=true \
-        npx percy exec -- bundle exec cucumber --tags 'not @wip' --publish
+        npx percy exec -- bundle exec cucumber --publish
