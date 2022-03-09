@@ -28,7 +28,7 @@ Feature: Login Page
       | performance    | 60 |
       | accessibility  | 80 |
       | best_practices | 70 |
-      | seo            | 80 |
+      | seo            | 70 |
 
   @percy
   Scenario: Percy Snapshot Test - Login Page
