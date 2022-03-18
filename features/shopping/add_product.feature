@@ -12,7 +12,7 @@ Feature: Add Product to Cart
     And the shopping cart have 1 the total item count
 
     When user go to the shopping cart
-    Then user should see $4.95 as the total price
+    Then user should see $9.90 as the total price
 
 
   Scenario: Success Add products to Cart
@@ -21,7 +21,7 @@ Feature: Add Product to Cart
     And the shopping cart have 5 the total item count
 
     When user go to the shopping cart
-    Then user should see $24.75 as the total price
+    Then user should see $49.50 as the total price
 
   @lighthouse
   Scenario: Performance Test - Product Page
